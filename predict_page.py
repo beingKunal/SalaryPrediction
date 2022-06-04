@@ -48,8 +48,5 @@ def show_predict_page():
         test_point = test_point.astype(float)
         predictedSalary = load_regressor.predict(test_point)
         st.subheader(f'Predicted Salary ${predictedSalary[0]:.2f}')
-
-    else:
-        st.write("")
     
     
